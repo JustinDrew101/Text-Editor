@@ -80,7 +80,7 @@ namespace GS_Text_Editor2
             LineNumberTextBox.Text = "";
             LineNumberTextBox.Width = getWidth();
             // now add each line number to LineNumberTextBox upto last line
-            for (int i = First_Line; i <= Last_Line + 2; i++)
+            for (int i = First_Line; i <= Last_Line + 1; i++)
             {
                 LineNumberTextBox.Text += i + 1 + "\n";
             }
