@@ -43,10 +43,10 @@ namespace GS_Text_Editor2
             }
             else
             {
-                MailMessage mail = new MailMessage("btgsoft208@gmail.com", "heclixa@gmail.com", textBox1.Text, "Name: " + textBox1.Text + "\n" + "Email: " + textBox2.Text + "\n" + "Message: " + textBox3.Text);
+                MailMessage mail = new MailMessage("", "", textBox1.Text, "Name: " + textBox1.Text + "\n" + "Email: " + textBox2.Text + "\n" + "Message: " + textBox3.Text);
                 SmtpClient client = new SmtpClient(textBox4.Text);
                 client.Port = 587;
-                client.Credentials = new System.Net.NetworkCredential("btgsoft208", "3808c@nada");
+                client.Credentials = new System.Net.NetworkCredential("", "");
                 client.EnableSsl = true;
                 client.Send(mail);
                 MessageBox.Show("Feedback sent!", "Success", MessageBoxButtons.OK);
